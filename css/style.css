@@ -48,10 +48,12 @@
 	font-size: 14px;
 	color:#1a2755;
 }
+.navbar-default .navbar-nav li:first-child a{
+	border-left: none;
+}
 .navbar-default .navbar-nav li a:hover{
 	color:#fff;
 	background-color: #3b5998;
-	border-radius: 5px;
 	transition: all .3s;
 }
 .navbar-default .navbar-nav li a:focus{
@@ -79,6 +81,7 @@
 	font-size: 38px;
 	font-family: "GOST";
 	display: inline-block;
+	text-align: center;
 	text-transform: uppercase;
 	background-color: #f8f8f8;
 	padding: 5px 20px;
