@@ -1,5 +1,6 @@
 .page-wrapper{
 	width: 100%;
+	overflow:hidden;
 	font-family: 'Open Sans', sans-serif;
 }
 .navbar-default{
@@ -173,22 +174,14 @@
 	margin-top: 55px;
 }
 .list1 .row ul{
-	padding:0;
+	list-style-type: none;
 }
 .list1 .row ul li{
-	list-style-type: none;
 	text-align: left;
 	margin-bottom: 30px;
+	vertical-align: top;
 }
-.list1 .image{
-	display: block;
+.list1 .pic{
 	width: 35px;
-	float: left;
 	text-align: center;
-	margin-right: 15px;
-}
-.list1 .title{
-	text-transform: uppercase;
-    vertical-align: middle;
-    font-size: 20px;
 }
