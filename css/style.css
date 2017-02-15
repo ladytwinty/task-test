@@ -1,187 +1,189 @@
-.page-wrapper{
+body{
+	font-size: 15px;
+	margin:0;
+	font-family: 'Open Sans', sans-serif;
+}
+/* блок nav */
+nav{
 	width: 100%;
-	overflow:hidden;
-	font-family: 'Open Sans', sans-serif;
 }
-.navbar-default{
+nav .wrapper{
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	padding: 0 10%;
 	background: #fafafa;
-	border: none;
-	margin-bottom: 0;
-	padding-bottom: 10px;
 }
-.navbar-header{
-	padding-left: 7%;
+nav .logo{
+	display: flex;
+	align-items: center;
+	flex-grow: 1;
 }
-.navbar-brand{
-	height: auto;
+nav .title{
+	margin-left: 10px;
 }
-.navbar-brand img{
-	min-width: 54px;
-	min-height: 54px;
-	float: left;
-}
-.title{
-	display: block;
-	margin-top: 20px;
-}
-.title .top{
-	color: #1a2755;
+nav .title .upper{
 	text-transform: uppercase;
+	font-size: 16px;
+	letter-spacing: 3px;
 	font-weight: 700;
+	color: #293560;
+}
+nav .title .bottom{
+	color: #293560;
+	text-transform:none;
 	letter-spacing: 1px;
-	font-size: 18px;
+	font-size: 12px;
 }
-.title .bottom{
-	color: #1a2755;
-	font-size: 13px;
+nav menu{
+	display: flex;
+	flex-wrap: wrap;
 }
-.menu{
-	margin-top: 2.5%;
-	margin-right: 8%;
-	float: right;
-	display: inline-block;
-}
-.navbar-default .navbar-nav li a{
-	font-family: 'Open Sans', sans-serif;
-	border-left: 1px solid #94a4c6;
-	text-decoration: none;
+nav menu li{
 	list-style-type: none;
-	padding: 9px 12px;
+}
+nav menu li a{
+	text-decoration: none !important;
 	font-size: 14px;
-	color:#1a2755;
+	color:#3b5998;
+	padding: 7px 15px;
+	border-right: 1px solid #3b5998;
+	transition: all .2s;
 }
-.navbar-default .navbar-nav li:first-child a{
-	border-left: none;
-}
-.navbar-default .navbar-nav li a:hover{
-	color:#fff;
-	background-color: #3b5998;
-	border-radius: 4px;
-	transition: all .3s;
-}
-.navbar-default .navbar-nav li a:focus{
-	color:#fff;
-	background-color: #3b5998;
-	border-radius: 4px;
-	transition: all .3s;
-}
-.banner{
-	background-image: url(../img/banner.jpg);
-	background-repeat: no-repeat;
-	background-position: 60%;
-	height: 619px;
-	position: relative;
-	text-align: center;
-	padding-top: 250px;
-	font-size: 2.5em;
-}
-.banner .coursename{
-	display: inline-block;
-	background: #f3f3f3;
-	border-radius: 8px;
-	margin-top: 3%;
-	padding: 10px 35px;
-	color: #ff4747;
-	text-transform: uppercase;
-	margin-bottom: 10px;
-	font-family: 'Roboto Condensed', sans-serif;
-}
-.banner .coursename span{
-	color: #3b5998;
-	padding: 0 15px;
-	line-height: 55px;
-    vertical-align: middle;
-}
-.banner .courseinfo{
-	display: inline-block;
-	background: #f3f3f3;
-	border-radius: 8px;
-	padding: 10px 5px;
-	color: #3b5998;
-	font-family: 'Roboto Condensed', sans-serif;
-}
-.banner .courseinfo span{
-	border-right: 1px solid #7f92ba;
-	padding: 0 15px;
-	line-height: 55px;
-    vertical-align: middle;
-}
-.banner .courseinfo .red{
-	color: #ff4747;
-}
-.banner .courseinfo .small-font{
-	font-size: 27px;
+nav menu li:last-child a{
 	border-right: none;
 }
-.banner .red-button{
-	margin-top: 25px;
-	position: relative;
+nav menu li a:hover{
+	color:#fff;
+	background: #3b5998;
+	border-radius: 5px;
 }
-.banner .red-button a{
-	padding: 10px 50px;
-	background-color: #ff4747;
-	color: #fff;
-	border-radius: 8px;
-	border: 1px solid #fff;
-	font-size: 15px;
-	text-transform: uppercase;
-	text-decoration: none;
-}
-.banner .red-button:before{
-	position: absolute;
-	content: '';
-	display: block;
-	background: url(../img/line.png) no-repeat;
-	width: 64px;
-	height: 44px;
-	transform: rotate(235deg);
-	left: 370px;
-}
-.banner .red-button::after{
-	position: absolute;
-	content: '';
-	display: block;
-	background: url(../img/line2.png) no-repeat;
-	width: 64px;
-	height: 44px;
-	transform: rotate(120deg);
-	right: 370px;
-	bottom: 5px;
-}
-.banner .red-button a:hover{
-	background:#fd6f6f;
-	-webkit-transition: background .3s;
-	-moz-transition: background .3s;
-	-ms-transition: background .3s;
-	-o-transition: background .3s;
-	transition: background .3s;
-}
-.list1{
-	background-image: url(../img/list.jpg);
-	background-repeat: no-repeat;
+/* блок nav */
+
+
+/* блок main */
+.main {
+	min-height: 619px;
+	background-image: url(../img/banner.jpg);
 	background-position: 50%;
-	height: 583px;
-	padding: 50px 0;
-	text-align: center;
+	background-size: cover;
+	background-repeat: no-repeat;
 }
-.list1 span{
-	text-transform: uppercase;
-	font-size: 32px;
-	color: #3b5998;
+.main .wrapper{
+	text-align: center;
 	font-family: 'Roboto Condensed', sans-serif;
 }
-.list1 .row{
-	margin-top: 55px;
+.main .wrapper .coursename {
+	text-transform: uppercase;
+	font-size: 32px;
+	display: inline-block;
+	background-color: #f8f8f8;
+	color:#3b5998;
+	margin-top: 18%;
+	padding: 12px 30px;
+	border-radius: 8px;
 }
-.list1 .row ul{
-	list-style-type: none;
+.main .wrapper .courseinfo {
+	text-transform: uppercase;
+	font-size: 32px;
+	background-color: #f8f8f8;
+	color:#3b5998;
+	display: inline-block;
+	margin-bottom: 40px;
+	padding: 12px 30px;
+	border-radius: 8px;
 }
-.list1 .row ul li{
-	text-align: left;
-	margin-bottom: 30px;
-	vertical-align: top;
+.red-block{
+	color:#ff4747;
 }
-.list1 .pic{
-	width: 35px;
+.small-font{
+	font-size: 18px;
+	text-transform: none;
+	vertical-align: middle;
+}
+.button{
+	margin-top: 15px;
+}
+.button a{
+	text-transform: uppercase;
+	text-decoration: none;
+	background-color: #ff4747;
+	color: #fff;
+	font-size: 16px;
+	padding: 10px 50px;
+	border:1px solid #fff;
+	border-radius: 8px;
+	transition: all .3s;
+}
+.button a:hover{
+	background: #ff6363;
+}
+/* блок main */
+
+
+/* блок list1 */
+.list1{
+	background-image: url(../img/list.jpg);
+	background-position: 50%;
+	background-size: cover;
+	background-repeat: no-repeat;
+	padding: 5% 15% 5% 15%;
+}
+.list1 .wrapper{
+	
+	text-align: center;
+	max-height: 576px;
+	font-family: 'Roboto Condensed', sans-serif;
+}
+.title{
+	color: #3b5998;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 25px;
+}
+.wrapper .list-wrap{
+	margin-top: 3%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+.wrapper .list-wrap .text{
+	margin-left: 50px;
+}
+.wrapper .list-wrap .pic{
+	display: block;
+	float: left;
+	margin-right: 15px;
+	width: 36px;
+	height: 40px;
 	text-align: center;
 }
+.list1 .col1, .list1 .col2{
+	width: 48%;
+}
+.list1 li{
+	margin: 0 4% 30px;
+	list-style-type: none;
+	text-align: left;
+}
+.list1 p{
+	color: #3b5998;
+	font-family: 'Open Sans', sans-serif;
+}
+.list1 .col1 li .text-title, .list1 .col2 li .text-title{
+	text-transform: uppercase;
+	font-family: 'Roboto Condensed', sans-serif;
+	color: #3b5998;
+	text-align: left;
+	font-size: 20px;
+}
+/* блок list1 */
+
+/* блок carusel */
+
+
+
+
+
+
+/* блок carusel */
